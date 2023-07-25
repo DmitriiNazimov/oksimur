@@ -1,0 +1,78 @@
+@import url('./styles/mixins');
+@import url('./styles/greeting');
+
+:root {
+    --background-color: #2d6372;
+    --bright-text-color: #fff;
+    --max-width-content: 820px;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: var(--bright-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 72px;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bright-text-color);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.link-button {
+    border: 1px solid var(--bright-text-color);
+    padding: 1rem;
+    border-radius: 150px;
+
+    &:hover {
+        @mixin button-hover;
+    }
+}
+
+.social-icons {
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+
+    a {
+        padding: 1rem;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            @mixin button-hover;
+        }
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}

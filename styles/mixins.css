@@ -1,0 +1,5 @@
+@define-mixin button-hover {
+    text-decoration: none;
+    box-shadow: 0 0 10px var(--bright-text-color);
+    transition: all 0.3s ease;
+}

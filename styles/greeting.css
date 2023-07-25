@@ -1,0 +1,111 @@
+.greeting__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(public/greeting-background.png);
+        background-repeat: repeat-x;
+        opacity: 0.8;
+        z-index: -1;
+    }
+}
+
+.greeting {
+    text-align: center;
+    max-width: 1280px;
+    width: 100%;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+
+    &__nav-wrapper {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: var(--bright-text-color) solid 1px;
+        margin-bottom: 10rem;
+        text-transform: uppercase;
+    }
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 1rem;
+    }
+
+    &__nav-desktop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        line-height: 40px;
+
+        &-list {
+            display: flex;
+            width: 100%;
+            max-width: var(--max-width-content);
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+        }
+    }
+
+    &__extra-links {
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__locales {
+        display: flex;
+
+        a:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: var(--max-width-content);
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-inner {
+                border-left: 1px solid #fff;
+                padding-left: 40px;
+                margin-bottom: 5rem;
+
+                p {
+                    font-size: 24px;
+                    line-height: 35px;
+                    text-align: left;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        margin-top: 3rem;
+    }
+
+    &__arrow-down {
+        transform: rotate(180deg);
+        font-size: 1.5rem;
+        letter-spacing: -3px;
+    }
+}
