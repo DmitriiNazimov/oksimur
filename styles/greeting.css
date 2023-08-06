@@ -1,8 +1,7 @@
+@import url('./mixins');
+
 .greeting__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    @mixin block-wrapper;
 
     &:before {
         content: '';
@@ -20,10 +19,8 @@
 
 .greeting {
     text-align: center;
-    max-width: 1280px;
-    width: 100%;
-    padding: 3rem 1rem;
-    box-sizing: border-box;
+
+    @mixin block;
 
     &__nav-wrapper {
         display: flex;
@@ -81,18 +78,12 @@
             align-items: center;
 
             &-inner {
-                border-left: 1px solid #fff;
-                padding-left: 40px;
+                @mixin inner-wrapper;
+
                 margin-bottom: 5rem;
 
-                p {
-                    font-size: 24px;
-                    line-height: 35px;
-                    text-align: left;
-
-                    &:first-child {
-                        margin-top: 0;
-                    }
+                .major-paragraph:first-child {
+                    margin-top: 0;
                 }
             }
         }
@@ -101,6 +92,10 @@
     &__contacts {
         display: flex;
         margin-top: 3rem;
+
+        .gallery-link {
+            margin-right: 1rem;
+        }
     }
 
     &__arrow-down {
