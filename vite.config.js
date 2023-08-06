@@ -4,10 +4,10 @@ import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
-  css: {
-    postcss: {
-      plugins: [postcssMixins, postcssNested],
+    css: {
+        postcss: {
+            plugins: [postcssMixins, postcssNested],
+        },
     },
-  },
-  plugins: [eslint()],
+    plugins: [eslint()],
 });
