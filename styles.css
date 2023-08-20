@@ -1,6 +1,9 @@
 @import url('./styles/mixins');
 @import url('./styles/greeting');
 @import url('./styles/about');
+@import url('./styles/artwork');
+@import url('./styles/most-actual');
+@import url('./styles/burger-menu');
 
 :root {
     --background-color: #2d6372;
@@ -8,6 +11,11 @@
     --bright-text-color: #fff;
     --dark-text-color: #02191c;
     --max-width-content: 820px;
+    --font-size-general: 16px;
+    --font-size-general-mobile: 14px;
+    --font-size-pre-medium: 18px;
+    --font-size-medium: 24px;
+    --font-size-header: 72px;
 }
 
 body {
@@ -15,13 +23,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans-serif;
-    font-size: 16px;
+    font-size: var(--font-size-general);
     line-height: 2rem;
     color: var(--bright-text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (width <= 1024px) {
+        font-size: var(--font-size-general-mobile);
+        line-height: 1.5rem;
+    }
 }
 
 main {
@@ -34,10 +47,16 @@ main {
 
 h1,
 h2 {
-    font-size: 72px;
+    font-size: var(--font-size-header);
     margin-bottom: 3rem;
     font-weight: 400;
     text-align: left;
+    text-transform: uppercase;
+
+    @media (width <= 1024px) {
+        font-size: var(--font-size-medium);
+        margin-bottom: 2rem;
+    }
 }
 
 a {
@@ -51,12 +70,21 @@ a {
 
 p {
     margin: 2rem 0;
+
+    @media (width <= 1024px) {
+        margin: 1.5rem 0;
+    }
 }
 
 .major-paragraph {
-    font-size: 24px;
+    font-size: var(--font-size-medium);
     line-height: 35px;
     text-align: left;
+
+    @media (width <= 1024px) {
+        font-size: var(--font-size-general-mobile);
+        line-height: 20px;
+    }
 }
 
 .link-button {

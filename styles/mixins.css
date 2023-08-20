@@ -16,12 +16,21 @@
     width: 100%;
     padding: 3rem 1rem;
     box-sizing: border-box;
+
+    @media (width <= 1024px) {
+        padding: 1rem;
+    }
 }
 
 @define-mixin inner-wrapper {
     border-left: 1px solid var(--bright-text-color);
     padding-left: 40px;
     margin-bottom: 2rem;
+
+    @media (width <= 1024px) {
+        border-left: none;
+        padding-left: 0;
+    }
 }
 
 @define-mixin social-icons-dark {

@@ -11,7 +11,7 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap"
             rel="stylesheet"
         />
-        <title>Художник Оксана Муротова</title>
+        <title>Художник Оксана Муратова</title>
     </head>
     <body>
         <main>
@@ -35,7 +35,16 @@
                                 <a href="#">RU</a>
                                 <a href="#">EN</a>
                             </div>
-                            <a href="#" class="burger-menu"></a>
+                            <button
+                                class="burger-menu"
+                                aria-expanded="false"
+                                aria-controls="burger-menu__list"
+                                aria-label="Кнопка открытия или закрытия основного меню"
+                            >
+                                <div class="burger-menu__button-line"></div>
+                                <div class="burger-menu__button-line"></div>
+                                <div class="burger-menu__button-line"></div>
+                            </button>
                         </div>
                     </section>
                     <section class="greeting__content-wrapper">
@@ -54,9 +63,9 @@
                                 <div class="greeting__contacts">
                                     <a href="#" class="link-button gallery-link">Галерея моих работ</a>
                                     <div class="social-icons">
-                                        <a href="#"><img src="public/insta.svg" alt="Instagram" /></a>
-                                        <a href="#"><img src="public/tt.svg" alt="Ticktock" /></a>
-                                        <a href="#"><img src="public/threads.svg" alt="Threads" /></a>
+                                        <a href="#"><img src="public/icons/insta.svg" alt="Instagram" /></a>
+                                        <a href="#"><img src="public/icons/tictok.svg" alt="Ticktock" /></a>
+                                        <a href="#"><img src="public/icons/threads.svg" alt="Threads" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -74,6 +83,9 @@
                                 Привет, я Оксана Муратова.<br />И я - художник-мистик, создающий зачарованный
                                 сюрреализм.
                             </p>
+                            <div class="about__content-image_mobile">
+                                <img src="public/about-image.png" alt=" Художник Оксана Муратова и её работы" />
+                            </div>
                             <div class="about__content-text-inner-wrapper">
                                 <p>
                                     С 2008 года профессионально работала в медиуме «Художественная кукла», имеею дипломы
@@ -97,9 +109,9 @@
                             <div class="about__contacts">
                                 <p>Давайте дружить</p>
                                 <div class="social-icons">
-                                    <a href="#"><img src="public/insta.svg" alt="Instagram" /></a>
-                                    <a href="#"><img src="public/tt.svg" alt="Ticktock" /></a>
-                                    <a href="#"><img src="public/threads.svg" alt="Threads" /></a>
+                                    <a href="#"><img src="public/icons/insta.svg" alt="Instagram" /></a>
+                                    <a href="#"><img src="public/icons/tictok.svg" alt="Ticktock" /></a>
+                                    <a href="#"><img src="public/icons/threads.svg" alt="Threads" /></a>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +121,109 @@
                     </div>
                 </section>
             </div>
-            <input type="text" id="test" />
+            <section class="artwork">
+                <h2>Мои работы</h2>
+                <p class="artwork__description">
+                    Для создания своих картин я использую разные материалы: ткань, бумагу, текстурную пасту, вышивку, а
+                    также различные артефакты. Найденные детские игрушки, винтажная бижутерия, камни - эти и другие
+                    артобъекты в моих произведениях обретают новую статусность музейных экспонатов. Таким образом я
+                    пропагандирую осознанное потребление, прославляя апсайклинг как эстетику будущего.
+                </p>
+                <div class="artwork__items-container">
+                    <div class="artwork__item">
+                        <img src="public/works/matreshka.png" alt="Ямы Матрешка" class="artwork__item-img" />
+                        <h3 class="artwork__item-title">Ямы Матрешка</h3>
+                        <table class="artwork__item-info">
+                            <tbody>
+                                <tr>
+                                    <td class="artwork__item-info-left">Размер холста, см</td>
+                                    <td class="artwork__item-info-right">60 * 80</td>
+                                </tr>
+                                <tr>
+                                    <td class="artwork__item-info-left">Материалы</td>
+                                    <td class="artwork__item-info-right">Акрил, ткань</td>
+                                </tr>
+                                <tr>
+                                    <td class="artwork__item-info-left">Выпуск</td>
+                                    <td class="artwork__item-info-right">2022</td>
+                                </tr>
+                                <tr>
+                                    <td class="artwork__item-info-left">Цена</td>
+                                    <td class="artwork__item-info-right">700 $</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="artwork__item">
+                        <img src="public/works/birthday.png" alt="День Рождения" class="artwork__item-img" />
+                        <h3 class="artwork__item-title">День Рождения</h3>
+                        <table class="artwork__item-info">
+                            <tbody>
+                                <tr>
+                                    <td class="artwork__item-info-left">Размер холста, см</td>
+                                    <td class="artwork__item-info-right">60 * 80</td>
+                                </tr>
+                                <tr>
+                                    <td class="artwork__item-info-left">Материалы</td>
+                                    <td class="artwork__item-info-right">Акрил, ткань, бисер</td>
+                                </tr>
+                                <tr>
+                                    <td class="artwork__item-info-left">Выпуск</td>
+                                    <td class="artwork__item-info-right">2022</td>
+                                </tr>
+                                <tr>
+                                    <td class="artwork__item-info-left">Цена</td>
+                                    <td class="artwork__item-info-right">700 $</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="artwork__item">
+                        <img
+                            src="public/works/wont-be-adult.png"
+                            alt="Не хочу быть взрослым"
+                            class="artwork__item-img"
+                        />
+                        <h3 class="artwork__item-title">Не хочу быть взрослым</h3>
+                        <table class="artwork__item-info">
+                            <tbody>
+                                <tr>
+                                    <td class="artwork__item-info-left">Размер холста, см</td>
+                                    <td class="artwork__item-info-right">60 * 80</td>
+                                </tr>
+                                <tr>
+                                    <td class="artwork__item-info-left">Материалы</td>
+                                    <td class="artwork__item-info-right">Акрил, ткань</td>
+                                </tr>
+                                <tr>
+                                    <td class="artwork__item-info-left">Выпуск</td>
+                                    <td class="artwork__item-info-right">2022</td>
+                                </tr>
+                                <tr>
+                                    <td class="artwork__item-info-left">Цена</td>
+                                    <td class="artwork__item-info-right">700 $</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="artwork__more-btn-container">
+                    <a href="#" class="link-button artwork__more-btn">Показать еще</a>
+                </div>
+            </section>
+            <div class="most-actual__wrapper">
+                <section class="most-actual">
+                    <div class="most-actual__first-line">Самое актуальное смотрите</div>
+                    <div class="most-actual__icons-wrapper">
+                        <div class="most-actual__here-text">здесь</div>
+                        <div class="social-icons">
+                            <a href="#"><img src="public/icons/insta.svg" alt="Instagram" /></a>
+                            <a href="#"><img src="public/icons/tictok.svg" alt="Ticktock" /></a>
+                            <a href="#"><img src="public/icons/threads.svg" alt="Threads" /></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
     </body>
 </html>

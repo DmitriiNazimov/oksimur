@@ -15,11 +15,26 @@
         &-text {
             width: 52%;
 
+            @media (width <= 1024px) {
+                width: 100%;
+
+                .major-paragraph {
+                    margin-top: 0;
+                    font-size: var(--font-size-pre-medium);
+                    line-height: 25px;
+                    font-weight: 500;
+                }
+            }
+
             &-inner-wrapper {
                 @mixin inner-wrapper;
 
                 margin-bottom: 3rem;
                 border-color: var(--dark-text-color);
+
+                @media (width <= 1024px) {
+                    margin-bottom: 0;
+                }
             }
         }
 
@@ -42,7 +57,27 @@
             img {
                 width: 100%;
             }
+
+            &_mobile {
+                display: none;
+            }
+
+            @media (width <= 1024px) {
+                display: none;
+
+                &_mobile {
+                    display: flex;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
         }
+    }
+
+    &__contacts {
+        margin-bottom: 3rem;
     }
 
     .social-icons {
