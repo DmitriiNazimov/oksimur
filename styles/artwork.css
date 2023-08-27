@@ -45,27 +45,11 @@
             }
         }
 
-        &-info {
-            border-spacing: 0;
-            border-top: 1px solid var(--background-color-bright);
-            width: 100%;
+        &-specification {
+            @mixin specification-table;
+
             padding-top: 1rem;
-
-            &-right,
-            &-left {
-                height: 2rem;
-            }
-
-            &-right {
-                text-align: right;
-            }
-        }
-    }
-
-    &__more-btn {
-        &-container {
-            margin: 4rem 0;
-            text-align: center;
+            border-top: 1px solid var(--background-color-bright);
         }
     }
 }

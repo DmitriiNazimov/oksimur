@@ -1,0 +1,112 @@
+.velvet-trash {
+    @mixin block;
+
+    &__description {
+        margin: 4rem 0;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+        margin-bottom: 4rem;
+        border-bottom: 1px solid var(--background-color-bright);
+
+        @media (width <= 1024px) {
+            flex-direction: column;
+            border-bottom: none;
+            margin-bottom: 0;
+
+            &:last-child {
+                padding-bottom: 2rem;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        & > :first-child {
+            margin-right: 2rem;
+
+            @media (width <= 1024px) {
+                margin-right: 0 auto;
+            }
+        }
+
+        &-collage {
+            display: flex;
+
+            @media (width <= 1024px) {
+                flex-direction: column;
+                margin: 0 auto;
+            }
+
+            &-prime-pic {
+                margin-right: 10px;
+                max-width: 300px;
+
+                @media (width <= 1024px) {
+                    margin-right: 0;
+                    width: 100%;
+                }
+            }
+
+            &-extra-pic-wrapper {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                @media (width <= 1024px) {
+                    flex-direction: row;
+                    margin-top: 10px;
+                }
+            }
+
+            &-extra-pic {
+                height: 145px;
+                width: 145px;
+
+                @media (width <= 1024px) {
+                    width: calc(50% - 5px);
+                }
+            }
+        }
+
+        &-info {
+            &-heading {
+                margin-bottom: 2rem;
+                margin-top: 0;
+
+                @media (width <= 1024px) {
+                    margin-bottom: 0;
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        &-specification {
+            @mixin specification-table;
+
+            @media (width <= 1024px) {
+                border-top: 1px solid var(--background-color-bright);
+            }
+        }
+    }
+
+    &__item:nth-child(even) {
+        flex-direction: row-reverse;
+
+        @media (width <= 1024px) {
+            flex-direction: column;
+        }
+
+        & > :last-child {
+            margin-right: 2rem;
+
+            @media (width <= 1024px) {
+                margin-right: 0 auto;
+            }
+        }
+    }
+}

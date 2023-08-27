@@ -1,9 +1,10 @@
 @import url('./styles/mixins');
 @import url('./styles/greeting');
+@import url('./styles/burger-menu');
 @import url('./styles/about');
 @import url('./styles/artwork');
 @import url('./styles/most-actual');
-@import url('./styles/burger-menu');
+@import url('./styles/velvet-trash');
 
 :root {
     --background-color: #2d6372;
@@ -52,10 +53,23 @@ h2 {
     font-weight: 400;
     text-align: left;
     text-transform: uppercase;
+    margin-top: 2rem;
+    line-height: var(--font-size-header);
 
     @media (width <= 1024px) {
         font-size: var(--font-size-medium);
         margin-bottom: 2rem;
+        line-height: initial;
+    }
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: var(--font-size-medium);
+
+    @media (width <= 1024px) {
+        font-size: var(--font-size-pre-medium);
     }
 }
 
@@ -94,6 +108,11 @@ p {
 
     &:hover {
         @mixin button-hover;
+    }
+
+    &__show-more {
+        margin: 4rem 0;
+        text-align: center;
     }
 }
 
