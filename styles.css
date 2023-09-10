@@ -4,8 +4,8 @@
 @import url('./styles/about');
 @import url('./styles/artwork');
 @import url('./styles/most-actual');
-@import url('./styles/velvet-trash');
-@import url('./styles/awards');
+@import url('./components/velvet-trash/velvet-trash');
+@import url('./components/awards/awards');
 
 :root {
     --background-color: #2d6372;

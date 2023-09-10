@@ -2,6 +2,7 @@ import postcssMixins from 'postcss-mixins';
 import postcssNested from 'postcss-nested';
 import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
+import injectHTML from 'vite-plugin-html-inject';
 
 export default defineConfig({
     css: {
@@ -9,5 +10,5 @@ export default defineConfig({
             plugins: [postcssMixins, postcssNested],
         },
     },
-    plugins: [eslint()],
+    plugins: [eslint(), injectHTML()],
 });
