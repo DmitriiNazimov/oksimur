@@ -5,6 +5,7 @@
 @import url('./styles/artwork');
 @import url('./styles/most-actual');
 @import url('./styles/velvet-trash');
+@import url('./styles/awards');
 
 :root {
     --background-color: #2d6372;
