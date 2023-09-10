@@ -1,0 +1,33 @@
+.burger-menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+    right: 16px;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    display: none;
+
+    @media (width <= 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+
+    &__button-line {
+        transition: 0.2s ease;
+        background-color: var(--bright-text-color);
+        margin-bottom: 4px;
+        width: 20px;
+        height: 3px;
+        border-radius: 3px;
+        border: 1px solid var(--dark-text-color);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

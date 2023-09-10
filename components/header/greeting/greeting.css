@@ -1,4 +1,4 @@
-@import url('./mixins');
+@import url('/mixins');
 
 .greeting__wrapper {
     @mixin block-wrapper;
@@ -16,7 +16,7 @@
         z-index: -1;
 
         @media (width <= 1024px) {
-            background-image: url(public/bg/greeting-background-mobile.png);
+            background-image: url(/public/bg/greeting-background-mobile.png);
             background-size: 103%;
 
             @media (height <= 660px) {
@@ -26,7 +26,7 @@
         }
 
         @media (width > 1024px) {
-            background-image: url(public/bg/greeting-background.png);
+            background-image: url(/public/bg/greeting-background.png);
         }
     }
 }

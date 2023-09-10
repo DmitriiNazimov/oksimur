@@ -1,0 +1,40 @@
+.most-actual__wrapper {
+    background-color: var(--background-color-bright);
+
+    @mixin block-wrapper;
+}
+
+.most-actual {
+    @mixin block;
+
+    width: auto;
+    padding: 4rem 1rem;
+    color: var(--dark-text-color);
+    font-size: var(--font-size-medium);
+
+    @media (width <= 1024px) {
+        text-align: center;
+        font-size: var(--font-size-pre-medium);
+    }
+
+    &__icons-wrapper {
+        display: flex;
+
+        @media (width <= 1024px) {
+            display: block;
+        }
+
+        .social-icons {
+            @mixin social-icons-dark;
+
+            justify-content: center;
+            width: 100%;
+            margin-top: 1rem;
+
+            @media (width <= 1024px) {
+                justify-content: center;
+                margin-top: 2rem;
+            }
+        }
+    }
+}

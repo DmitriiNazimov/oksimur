@@ -1,9 +1,10 @@
-@import url('./styles/mixins');
-@import url('./styles/greeting');
-@import url('./styles/burger-menu');
-@import url('./styles/about');
-@import url('./styles/artwork');
-@import url('./styles/most-actual');
+@import url('/mixins');
+@import url('./components/social-icons/social-icons');
+@import url('./components/header/greeting/greeting');
+@import url('./components/header/nav/burger-menu');
+@import url('./components/about/about');
+@import url('./components/artwork/artwork');
+@import url('./components/most-actual/most-actual');
 @import url('./components/velvet-trash/velvet-trash');
 @import url('./components/awards/awards');
 
@@ -114,27 +115,5 @@ p {
     &__show-more {
         margin: 4rem 0;
         text-align: center;
-    }
-}
-
-.social-icons {
-    display: flex;
-    align-items: center;
-
-    a {
-        padding: 1rem;
-        border: 1px solid #fff;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &:hover {
-            @mixin button-hover;
-        }
-
-        &:not(:last-child) {
-            margin-right: 1rem;
-        }
     }
 }

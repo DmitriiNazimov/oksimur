@@ -1,0 +1,21 @@
+.social-icons {
+    display: flex;
+    align-items: center;
+
+    a {
+        padding: 1rem;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            @mixin button-hover;
+        }
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}
