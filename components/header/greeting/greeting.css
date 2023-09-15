@@ -14,14 +14,14 @@
         height: 100%;
         opacity: 0.8;
         z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         @media (width <= 1024px) {
             background-image: url(/public/bg/greeting-background-mobile.png);
-            background-size: 103%;
 
             @media (height <= 660px) {
-                background-size: 110%;
-                background-position: 48% 100%;
+                background-position: 100% 100%;
             }
         }
 
@@ -48,7 +48,7 @@
         text-transform: uppercase;
 
         @media (width <= 1024px) {
-            margin-bottom: 8rem;
+            margin-bottom: 6.5rem;
         }
     }
 
@@ -126,7 +126,7 @@
                 margin-bottom: 5rem;
 
                 @media (width <= 1024px) {
-                    margin-bottom: 3rem;
+                    margin-bottom: 3.5rem;
                 }
 
                 .major-paragraph:first-child {
@@ -157,7 +157,7 @@
         transform: rotate(180deg);
         font-size: var(--font-size-medium);
         letter-spacing: -3px;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .gallery-link {
