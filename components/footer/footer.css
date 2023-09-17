@@ -1,0 +1,31 @@
+.footer {
+  color: var(--gray-text-color);
+
+  &__developer {
+    display: flex;
+
+    &-logo {
+      width: 45px;
+    }
+
+    &-text {
+      line-height: 1.5rem;
+      margin-left: 0.5rem;
+    }
+
+    &-link {
+      color: var(--gray-text-color);
+      font-weight: 700;
+    }
+  }
+}
+
+.footer__mobile-wrapper {
+  @mixin block;
+
+  background-color: var(--background-color-footer);
+
+  @media (width > 1024px) {
+    display: none;
+  }
+}
