@@ -1,0 +1,19 @@
+<div class="burger-menu__wrapper">
+    <input type="checkbox" id="burger-menu-checkbox" name="burger-menu-checkbox" class="burger-menu__checkbox" />
+    <label class="burger-menu__label" for="burger-menu-checkbox">
+        <span
+            class="burger-menu"
+            aria-expanded="false"
+            aria-controls="burger-menu__list"
+            aria-label="{=$navBurgerLabel}"
+        >
+            <div class="burger-menu__button-line"></div>
+            <div class="burger-menu__button-line"></div>
+            <div class="burger-menu__button-line"></div>
+        </span>
+    </label>
+    <label class="burger-menu__overlay" for="burger-menu-checkbox"></label>
+    <ul class="burger-menu__list">
+        <load ="/components/header/nav/menu-items.html" />
+    </ul>
+</div>

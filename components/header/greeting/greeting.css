@@ -1,170 +1,163 @@
 @import url('/mixins');
 
 .greeting__wrapper {
-  @mixin block-wrapper;
+    @mixin block-wrapper;
 
-  position: relative;
+    position: relative;
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.85;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size: cover;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.85;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-    @media (width <= 1024px) {
-      background-image: url(/public/bg/greeting-background-mobile.jpg);
+        @media (width <= 1024px) {
+            background-image: url(/public/bg/greeting-background-mobile.jpg);
 
-      @media (height <= 660px) {
-        background-position: 100% 100%;
-      }
+            @media (height <= 660px) {
+                background-position: 100% 100%;
+            }
+        }
+
+        @media (width > 1024px) {
+            background-image: url(/public/bg/greeting-background.jpg);
+        }
     }
-
-    @media (width > 1024px) {
-      background-image: url(/public/bg/greeting-background.jpg);
-    }
-  }
 }
 
 .greeting {
-  text-align: center;
+    text-align: center;
 
-  @mixin block;
+    @mixin block;
 
-  h1 {
-    text-shadow: 0 0 5px black;
-  }
-
-  &__nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: var(--bright-text-color) solid 1px;
-    margin-bottom: 10rem;
-    text-transform: uppercase;
-
-    @media (width <= 1024px) {
-      margin-bottom: 6.5rem;
-    }
-  }
-
-  &__logo {
-    width: 60px;
-    height: 60px;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-
-    @media (width <= 1024px) {
-      img {
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-  }
-
-  &__nav-desktop {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    line-height: 40px;
-
-    @media (width <= 1024px) {
-      display: none;
+    h1 {
+        text-shadow: 0 0 5px black;
     }
 
-    &-list {
-      display: flex;
-      width: 100%;
-      max-width: var(--max-width-content);
-      justify-content: space-around;
-      list-style: none;
-      padding: 0;
-    }
-  }
-
-  &__extra-links {
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
-
-    @media (width <= 1024px) {
-      margin-right: 50px;
-    }
-  }
-
-  &__locales {
-    display: flex;
-
-    a:not(:last-child) {
-      margin-right: 1rem;
-    }
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    max-width: var(--max-width-content);
-
-    @media (width <= 1024px) {
-      width: 80%;
-    }
-
-    &-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      &-inner {
-        @mixin inner-wrapper;
-
-        margin-bottom: 5rem;
+    &__nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: var(--bright-text-color) solid 1px;
+        margin-bottom: 10rem;
+        text-transform: uppercase;
 
         @media (width <= 1024px) {
-          margin-bottom: 3.5rem;
+            margin-bottom: 6.5rem;
+        }
+    }
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+
+        @media (width <= 1024px) {
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    &__nav-desktop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        line-height: 40px;
+
+        @media (width <= 1024px) {
+            display: none;
         }
 
-        .major-paragraph:first-child {
-          margin-top: 0;
+        &-list {
+            display: flex;
+            width: 100%;
+            max-width: var(--max-width-content);
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
         }
-      }
-    }
-  }
-
-  &__contacts {
-    display: flex;
-    margin-top: 3rem;
-
-    .gallery-link {
-      margin-right: 1rem;
-
-      @media (width <= 1024px) {
-        width: 161px;
-      }
     }
 
-    @media (width <= 1024px) {
-      flex-direction: column-reverse;
+    &__extra-links {
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+
+        @media (width <= 1024px) {
+            margin-right: 50px;
+        }
     }
-  }
 
-  &__arrow-down {
-    transform: rotate(180deg);
-    font-size: var(--font-size-medium);
-    letter-spacing: -3px;
-    margin-bottom: 2rem;
-  }
+    &__locales {
+        display: flex;
 
-  .gallery-link {
-    margin-top: 2rem;
-  }
-}
+        a:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
 
-.social-icons {
-  margin-top: 2rem;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: var(--max-width-content);
+
+        @media (width <= 1024px) {
+            width: 80%;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-inner {
+                @mixin inner-wrapper;
+
+                margin-bottom: 5rem;
+
+                @media (width <= 1024px) {
+                    margin-bottom: 3.5rem;
+                }
+
+                .major-paragraph:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        margin-top: 5rem;
+
+        .gallery-link {
+            margin-right: 1rem;
+
+            @media (width <= 1024px) {
+                width: 161px;
+                margin-top: 2rem;
+            }
+        }
+
+        @media (width <= 1024px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__arrow-down {
+        transform: rotate(180deg);
+        font-size: var(--font-size-medium);
+        letter-spacing: -3px;
+        margin-bottom: 2rem;
+    }
 }
