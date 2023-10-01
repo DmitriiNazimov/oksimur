@@ -66,6 +66,7 @@
 
                 @media (width <= 1024px) {
                     margin-bottom: 0;
+                    padding-left: 0;
                 }
             }
         }
@@ -134,6 +135,8 @@
             font-size: var(--font-size-medium);
             margin-top: 1.5rem;
             font-weight: 700;
+            cursor: pointer;
+            width: fit-content;
 
             @media (width <= 1024px) {
                 font-size: var(--font-size-pre-medium);

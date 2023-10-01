@@ -10,6 +10,7 @@
 @import url('./components/awards/awards');
 @import url('./components/contacts/contacts');
 @import url('./components/footer/footer');
+@import url('./components/gallery/gallery');
 
 :root {
     --background-color: #2d6372;
@@ -122,4 +123,8 @@ p {
         margin: 4rem 0;
         text-align: center;
     }
+}
+
+.hidden {
+    display: none;
 }

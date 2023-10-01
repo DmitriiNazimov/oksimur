@@ -1,4 +1,4 @@
-export default function setupShowMore(showMoreButtonSelector, itemsSelector, displayValue = 'block', limit = 3) {
+function setupShowMore(showMoreButtonSelector, itemsSelector, displayValue = 'block', limit = 3) {
     const showMoreBtn = document.querySelector(showMoreButtonSelector);
     const showMoreBtnLink = showMoreBtn.querySelector('.link-button');
     const items = document.querySelectorAll(itemsSelector);
@@ -27,3 +27,6 @@ export default function setupShowMore(showMoreButtonSelector, itemsSelector, dis
         }
     });
 }
+
+setupShowMore('#artwork__show-more-btn', '.artwork__item');
+setupShowMore('#velvet-trash__show-more-btn', '.velvet-trash__item', 'flex');

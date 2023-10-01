@@ -8,7 +8,7 @@
     &__item {
         display: flex;
         justify-content: space-between;
-        padding-top: 4rem;
+        padding: 4rem 0;
         margin-bottom: 4rem;
         border-bottom: 1px solid var(--background-color-bright);
 
@@ -20,6 +20,7 @@
             flex-direction: column;
             border-bottom: none;
             margin-bottom: 0;
+            padding-bottom: 0;
 
             &:last-child {
                 padding-bottom: 2rem;
@@ -49,6 +50,7 @@
             &-prime-pic {
                 margin-right: 10px;
                 max-width: 300px;
+                cursor: pointer;
 
                 @media (width <= 1024px) {
                     margin-right: 0;
@@ -70,6 +72,7 @@
             &-extra-pic {
                 height: 145px;
                 width: 145px;
+                cursor: pointer;
 
                 @media (width <= 1024px) {
                     width: calc(50% - 5px);
@@ -94,6 +97,7 @@
 
             @media (width <= 1024px) {
                 border-top: 1px solid var(--background-color-bright);
+                padding-top: 1rem;
             }
         }
     }
