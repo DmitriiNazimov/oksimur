@@ -12,10 +12,6 @@
 
     @mixin block;
 
-    &__heading {
-        margin-bottom: 4rem;
-    }
-
     &__items-container {
         display: flex;
         flex-wrap: wrap;
@@ -27,11 +23,11 @@
 
     &__item {
         width: 31%;
-        margin-bottom: 2rem;
+        margin-bottom: var(--gap-medium);
 
         @media (width > 1024px) {
             &:not(:first-child)&:not(:nth-child(3n + 1)) {
-                margin-left: 1.5rem;
+                margin-left: var(--gap-small);
             }
         }
 
@@ -54,7 +50,7 @@
 
         &-info {
             &-paragraph {
-                margin: 1rem 0;
+                margin: var(--gap-min) 0;
             }
         }
     }

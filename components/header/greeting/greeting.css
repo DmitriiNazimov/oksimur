@@ -55,14 +55,14 @@
     &__logo {
         width: 60px;
         height: 60px;
-        margin-right: 1rem;
+        margin-right: var(--gap-min);
         display: flex;
         align-items: center;
 
         @media (width <= 1024px) {
             img {
-                width: 2rem;
-                height: 2rem;
+                width: var(--gap-medium);
+                height: var(--gap-medium);
             }
         }
     }
@@ -89,7 +89,7 @@
     }
 
     &__extra-links {
-        margin-left: 1rem;
+        margin-left: var(--gap-min);
         display: flex;
         align-items: center;
 
@@ -102,7 +102,7 @@
         display: flex;
 
         a:not(:last-child) {
-            margin-right: 1rem;
+            margin-right: var(--gap-min);
         }
     }
 
@@ -141,11 +141,11 @@
         margin-top: 5rem;
 
         .gallery-link {
-            margin-right: 1rem;
+            margin-right: var(--gap-min);
 
             @media (width <= 1024px) {
                 width: 161px;
-                margin-top: 2rem;
+                margin-top: var(--gap-medium);
             }
         }
 
@@ -158,6 +158,6 @@
         transform: rotate(180deg);
         font-size: var(--font-size-medium);
         letter-spacing: -3px;
-        margin-bottom: 2rem;
+        margin-bottom: var(--gap-medium);
     }
 }

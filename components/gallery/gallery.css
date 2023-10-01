@@ -16,7 +16,7 @@
 
     &__title {
         position: absolute;
-        top: 1rem;
+        top: var(--gap-min);
         left: 50%;
         transform: translateX(-50%);
         text-shadow: 0 0 20px black;
@@ -27,17 +27,17 @@
 
     &__content {
         position: absolute;
-        top: 4rem;
-        bottom: 2rem;
+        top: var(--gap-huge);
+        bottom: var(--gap-medium);
         display: flex;
     }
 
     &__close-btn {
         position: absolute;
-        top: 1rem;
-        right: 1rem;
-        width: 1.5rem;
-        height: 1.5rem;
+        top: var(--gap-min);
+        right: var(--gap-min);
+        width: var(--gap-small);
+        height: var(--gap-small);
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -45,7 +45,7 @@
     }
 
     &__img-container {
-        padding: 0 1rem;
+        padding: 0 var(--gap-min);
         display: flex;
 
         @media (width <= 1024px) {
@@ -88,7 +88,7 @@
         @media (width <= 1024px) {
             position: absolute;
             bottom: 0;
-            padding: 1rem;
+            padding: var(--gap-min);
         }
     }
 

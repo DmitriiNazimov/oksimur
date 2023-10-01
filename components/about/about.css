@@ -20,7 +20,6 @@
 
                 .major-paragraph {
                     font-size: var(--font-size-pre-medium);
-                    line-height: 25px;
                     font-weight: 500;
                 }
             }
@@ -28,12 +27,16 @@
             &-inner-wrapper {
                 @mixin inner-wrapper;
 
-                margin-bottom: 3rem;
+                margin-bottom: var(--gap-big);
                 border-color: var(--dark-text-color);
 
                 @media (width <= 1024px) {
                     margin-bottom: 0;
                 }
+            }
+
+            .major-paragraph {
+                margin-top: 0;
             }
         }
 
@@ -76,7 +79,7 @@
     }
 
     &__contacts {
-        margin-bottom: 3rem;
+        margin-bottom: var(--gap-big);
     }
 
     .social-icons {

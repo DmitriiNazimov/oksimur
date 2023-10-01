@@ -4,9 +4,9 @@
     cursor: pointer;
     position: fixed;
     z-index: 999;
-    right: 1rem;
-    width: 2rem;
-    height: 2rem;
+    right: var(--gap-min);
+    width: var(--gap-medium);
+    height: var(--gap-medium);
     padding: 0;
     display: none;
 
@@ -42,14 +42,14 @@
         z-index: 2;
         display: none;
         list-style: none;
-        padding: 3rem;
+        padding: var(--gap-big);
         margin: 0;
         border-radius: 10px;
-        margin-right: 0.5rem;
+        margin-right: var(--gap-tiny);
         margin-top: 1.6rem;
 
         .burger-menu__wrapper &-item:not(:last-child) {
-            margin-bottom: 1.5rem;
+            margin-bottom: var(--gap-small);
         }
     }
 

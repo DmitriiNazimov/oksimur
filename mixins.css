@@ -14,18 +14,18 @@
 @define-mixin block {
     max-width: 1280px;
     width: 100%;
-    padding: 3rem 1rem;
+    padding: var(--gap-big) var(--gap-min);
     box-sizing: border-box;
 
     @media (width <= 1024px) {
-        padding: 1rem;
+        padding: var(--gap-min);
     }
 }
 
 @define-mixin inner-wrapper {
     border-left: 1px solid var(--bright-text-color);
     padding-left: 40px;
-    margin-bottom: 2rem;
+    margin-bottom: var(--gap-medium);
 
     @media (width <= 1024px) {
         border-left: none;
@@ -49,7 +49,7 @@
 
     &-right,
     &-left {
-        height: 2rem;
+        height: var(--gap-medium);
     }
 
     &-right {

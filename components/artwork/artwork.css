@@ -2,7 +2,6 @@
     @mixin block;
 
     &__description {
-        margin: 4rem 0;
         margin-bottom: 0;
     }
 
@@ -10,7 +9,7 @@
         display: flex;
         justify-content: flex-start;
         gap: 20px;
-        padding-top: 4rem;
+        padding-top: var(--gap-huge);
         flex-wrap: wrap;
 
         @media (width <= 1024px) {
@@ -24,13 +23,13 @@
         max-width: 30.5%;
 
         &:nth-child(n + 4) {
-            margin-top: 3rem;
+            margin-top: var(--gap-big);
             display: none;
         }
 
         @media (width <= 1024px) {
             max-width: 100%;
-            margin-top: 3rem;
+            margin-top: var(--gap-big);
         }
 
         &-img {
@@ -45,8 +44,8 @@
             text-transform: uppercase;
             font-weight: 500;
             font-size: var(--font-size-pre-medium);
-            line-height: 2rem;
-            margin: 2rem 0;
+            line-height: var(--gap-medium);
+            margin: var(--gap-medium) 0;
 
             @media (width <= 1024px) {
                 font-size: var(--font-size-pre-medium);
@@ -56,7 +55,7 @@
         &-specification {
             @mixin specification-table;
 
-            padding-top: 1rem;
+            padding-top: var(--gap-min);
             border-top: 1px solid var(--background-color-bright);
         }
     }

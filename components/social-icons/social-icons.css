@@ -3,7 +3,7 @@
     align-items: center;
 
     &__link {
-        padding: 1rem;
+        padding: var(--gap-min);
         border: 1px solid #fff;
         border-radius: 100%;
         display: flex;
@@ -17,7 +17,7 @@
         }
 
         &:not(:last-child) {
-            margin-right: 1rem;
+            margin-right: var(--gap-min);
         }
     }
 }

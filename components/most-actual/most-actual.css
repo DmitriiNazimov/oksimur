@@ -8,7 +8,7 @@
     @mixin block;
 
     width: auto;
-    padding: 4rem 1rem;
+    padding: var(--gap-huge) var(--gap-min);
     color: var(--dark-text-color);
     font-size: var(--font-size-medium);
 
@@ -26,7 +26,7 @@
             @mixin social-icons-dark;
 
             justify-content: center;
-            margin-top: 1rem;
+            margin-top: var(--gap-min);
         }
     }
 }
