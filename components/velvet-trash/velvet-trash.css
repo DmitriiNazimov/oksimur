@@ -34,7 +34,7 @@
             margin-right: var(--gap-medium);
 
             @media (width <= 1024px) {
-                margin-right: 0 auto;
+                margin: 0 auto;
             }
         }
 
@@ -44,6 +44,7 @@
             @media (width <= 1024px) {
                 flex-direction: column;
                 margin: 0 auto;
+                width: 100%;
             }
 
             &-prime-pic {
@@ -54,6 +55,7 @@
                 @media (width <= 1024px) {
                     margin-right: 0;
                     width: 100%;
+                    max-width: 100%;
                 }
             }
 
@@ -75,6 +77,7 @@
 
                 @media (width <= 1024px) {
                     width: calc(50% - 5px);
+                    height: auto;
                 }
             }
         }

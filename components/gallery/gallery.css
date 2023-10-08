@@ -30,6 +30,12 @@
         top: var(--gap-huge);
         bottom: var(--gap-medium);
         display: flex;
+        width: 100%;
+
+        @media (width <= 1024px) {
+            align-self: center;
+            justify-content: center;
+        }
     }
 
     &__close-btn {
@@ -45,19 +51,19 @@
     }
 
     &__img-container {
-        padding: 0 var(--gap-min);
         display: flex;
 
         @media (width <= 1024px) {
             align-self: center;
+            width: 100%;
+            justify-content: center;
+            padding: 0 var(--gap-min);
         }
     }
 
     &__img {
         max-width: 100%;
         max-height: 100%;
-        height: 100%;
-        width: auto;
         object-fit: contain;
         border: none;
         transition: all 0.5s ease-in-out;
@@ -84,11 +90,15 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        padding: var(--gap-min);
+        height: fit-content;
+        align-self: center;
+        flex-grow: 1;
+        justify-content: end;
 
         @media (width <= 1024px) {
             position: absolute;
             bottom: 0;
-            padding: var(--gap-min);
         }
     }
 

@@ -10,11 +10,11 @@
         justify-content: flex-start;
         gap: 20px;
         padding-top: var(--gap-huge);
-        flex-wrap: wrap;
 
         @media (width <= 1024px) {
             flex-direction: column;
             padding-top: 0;
+            flex-wrap: initial;
         }
     }
 
@@ -30,6 +30,8 @@
         @media (width <= 1024px) {
             max-width: 100%;
             margin-top: var(--gap-big);
+            display: flex;
+            flex-direction: column;
         }
 
         &-img {
@@ -38,6 +40,12 @@
             border: 1px solid var(--bright-text-color);
             max-height: 400px;
             cursor: pointer;
+
+            @media (width <= 1024px) {
+                align-self: center;
+                max-height: none;
+                max-width: none;
+            }
         }
 
         &-title {

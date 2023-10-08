@@ -56,12 +56,7 @@ class Gallery {
         this.titleElem.textContent = item.getAttribute('alt');
         this.current.items = items;
         this.current.index = index;
-
-        if (this.imgContainer.firstChild) {
-            this.imgContainer.style.minWidth = `${this.imgContainer.firstChild.width}px`;
-            this.imgContainer.innerHTML = '';
-        }
-
+        this.imgContainer.innerHTML = '';
         this.imgContainer.append(this.createImgClone(item));
         this.startFadeEffect();
         this.toggleControlBtns();
@@ -97,7 +92,6 @@ class Gallery {
     /* Запускаем эффект смены изображения с затуханием */
     startFadeEffect() {
         setTimeout(() => {
-            this.imgContainer.style.minWidth = null;
             this.imgContainer.firstChild.style.opacity = 1;
         }, 50);
     }
@@ -135,6 +129,13 @@ class Gallery {
         this.stubElem.addEventListener('click', () => this.toggle());
         this.prevBtn.addEventListener('click', () => this.changeImg(false));
         this.nextBtn.addEventListener('click', () => this.changeImg());
+
+        // В мобильной версии скрывает галерею при клике мимо изображения
+        this.galleryContentElem.addEventListener('click', (event) => {
+            if (event.target === event.currentTarget) {
+                this.toggle();
+            }
+        });
 
         window.addEventListener('keydown', (event) => {
             if (this.galleryElem.classList.contains('hidden')) {
