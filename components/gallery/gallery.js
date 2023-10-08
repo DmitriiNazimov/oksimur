@@ -1,19 +1,7 @@
 class Gallery {
     constructor(selectors) {
         this.setProperties();
-
-        selectors.forEach((selector) => {
-            const items = document.querySelectorAll(selector);
-
-            items.forEach((item, i) => {
-                item.addEventListener('click', () => {
-                    this.toggle(item);
-                    this.addImg(item, i, items);
-                });
-            });
-        });
-
-        this.setListeners();
+        this.setListeners(selectors);
     }
 
     /* Устанавливаем свойства для галереи */
@@ -58,6 +46,7 @@ class Gallery {
 
         if (item) {
             this.stub.hide();
+            // Отключает скролл страницы
             document.body.style.overflow = 'hidden';
         }
     }
@@ -73,7 +62,7 @@ class Gallery {
             this.imgContainer.innerHTML = '';
         }
 
-        this.imgContainer.append(this.createImgClone(item, index, items));
+        this.imgContainer.append(this.createImgClone(item));
         this.startFadeEffect();
         this.toggleControlBtns();
     }
@@ -81,8 +70,8 @@ class Gallery {
     /* Меняем изображение в области просмотра галереи */
     changeImg = (directionIsForward = true) => {
         const newIndex = directionIsForward ? this.current.index + 1 : this.current.index - 1;
-        const newItem = this.current.items[newIndex];
         this.current.index = newIndex;
+        const newItem = this.current.items[newIndex];
 
         if (newItem) {
             this.stub.hide();
@@ -96,12 +85,12 @@ class Gallery {
     };
 
     /* Создаем клон изображения, который будем показывать в области просмотра галереи */
-    createImgClone(item, index, items) {
+    createImgClone(item) {
         const itemClone = item.cloneNode(true);
         itemClone.classList.add('gallery__img');
         itemClone.style.opacity = 0;
         // eslint-disable-next-line no-use-before-define
-        itemClone.addEventListener('click', () => this.changeImg(items, index));
+        itemClone.addEventListener('click', () => this.changeImg());
         return itemClone;
     }
 
@@ -113,6 +102,7 @@ class Gallery {
         }, 50);
     }
 
+    /* Показываем/скрываем кнопки управления галереей */
     toggleControlBtns() {
         if (this.current.index < 0) {
             this.prevBtn.classList.add('hidden');
@@ -128,19 +118,21 @@ class Gallery {
     }
 
     /* Устанавливаем слушатели событий */
-    setListeners() {
+    setListeners(selectors) {
+        selectors.forEach((selector) => {
+            const items = document.querySelectorAll(selector);
+
+            items.forEach((item, i) => {
+                item.addEventListener('click', () => {
+                    this.toggle(item);
+                    this.addImg(item, i, items);
+                });
+            });
+        });
+
         this.overlayElem.addEventListener('click', () => this.toggle());
         this.closeBtn.addEventListener('click', () => this.toggle());
         this.stubElem.addEventListener('click', () => this.toggle());
-        this.galleryContentElem.addEventListener('click', (event) => {
-            const { target } = event;
-
-            if (target !== this.galleryContentElem) {
-                return;
-            }
-
-            this.toggle();
-        });
         this.prevBtn.addEventListener('click', () => this.changeImg(false));
         this.nextBtn.addEventListener('click', () => this.changeImg());
 

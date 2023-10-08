@@ -1,36 +1,31 @@
 <section class="artwork" id="artwork">
     <h2>{=$artworksTitle}</h2>
-    <p class="artwork__description">
-        Для создания своих картин я использую разные материалы: ткань, бумагу, текстурную пасту, вышивку, а также
-        различные артефакты. Найденные детские игрушки, винтажная бижутерия, камни - эти и другие артобъекты в моих
-        произведениях обретают новую статусность музейных экспонатов. Таким образом я пропагандирую осознанное
-        потребление, прославляя апсайклинг как эстетику будущего.
-    </p>
+    <p class="artwork__description">{=$artworksDescription}</p>
     <div class="artwork__items-container">
         <load
             ="/components/artwork/artwork-item.html"
-            title="Ямы Матрешка"
+            title="{=$workMatreshka}"
             imgSrc="/public/works/matreshka.png"
             size="60 * 80"
-            materials="Акрил, ткань, бисер"
+            materials="{=$specMaterialAkril}, {=$specMaterialCanvas}, {=$specMaterialBiser}"
             date="2022"
             price="700 $"
         />
         <load
             ="/components/artwork/artwork-item.html"
-            title="День Рождения"
+            title="{=$workBirthday}"
             imgSrc="/public/works/birthday.png"
             size="60 * 80"
-            materials="Акрил, ткань, бисер"
+            materials="{=$specMaterialAkril}, {=$specMaterialCanvas}, {=$specMaterialBiser}"
             date="2022"
             price="700 $"
         />
         <load
             ="/components/artwork/artwork-item.html"
-            title="Не хочу быть взрослым"
+            title="{=$workWontBeAdult}"
             imgSrc="/public/works/wont-be-adult.png"
             size="60 * 80"
-            materials="Акрил, ткань, бисер"
+            materials="{=$specMaterialAkril}, {=$specMaterialCanvas}, {=$specMaterialBiser}"
             date="2022"
             price="700 $"
         />
