@@ -1,8 +1,8 @@
-<div class="greeting__wrapper" id="greeting__wrapper">
+<div class="greeting__wrapper greeting__wrapper_zoom-wait-load" id="greeting__wrapper">
     <header class="greeting">
         <load ="/components/header/nav/nav.html" />
         <section class="greeting__content-wrapper">
-            <div class="greeting__content">
+            <div class="greeting__content greeting_opacity-wait-load">
                 <h1>{=$greetingTitle}</h1>
                 <div class="greeting__content-wrapper-inner">
                     <p class="major-paragraph">{=$greetingMajorParagraph1}</p>
@@ -15,6 +15,11 @@
                 </div>
             </div>
         </section>
-        <div class="greeting__arrow-down">╱ ╲</div>
+        <div class="greeting__arrow-down">
+            <img
+                src="/public/icons/greeting-arrow-down.svg"
+                class="greeting__arrow-down-img greeting_opacity-wait-load jump-wait-load"
+            />
+        </div>
     </header>
 </div>

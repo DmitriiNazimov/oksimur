@@ -1,3 +1,4 @@
+import './components/header/greeting/greeting';
 import './components/header/nav/button-top/button-top';
 import './components/gallery/gallery';
 import './components/contacts/contacts';

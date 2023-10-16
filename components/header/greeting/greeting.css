@@ -5,6 +5,12 @@
 
     position: relative;
 
+    &&_zoom-wait-load {
+        &:before {
+            transform: scale(1.5);
+        }
+    }
+
     &:before {
         content: '';
         position: absolute;
@@ -16,9 +22,12 @@
         z-index: -1;
         background-repeat: no-repeat;
         background-size: cover;
+        transform: scale(1);
+        transition: transform 2s;
 
         @media (width <= 1024px) {
-            background-image: url(/public/bg/greeting-background-mobile.jpg);
+            background-image: url(/bg/greeting-background-mobile.jpg);
+            font-weight: var(--mobile-resolution);
 
             @media (height <= 660px) {
                 background-position: 100% 100%;
@@ -26,7 +35,7 @@
         }
 
         @media (width > 1024px) {
-            background-image: url(/public/bg/greeting-background.jpg);
+            background-image: url(/bg/greeting-background.jpg);
         }
     }
 }
@@ -110,6 +119,8 @@
         display: flex;
         flex-direction: column;
         max-width: var(--max-width-content);
+        opacity: 1;
+        transition: opacity 1.5s ease-in-out;
 
         @media (width <= 1024px) {
             width: 80%;
@@ -138,7 +149,7 @@
 
     &__contacts {
         display: flex;
-        margin-top: 5rem;
+        margin-top: var(--gap-huge);
 
         .gallery-link {
             margin-right: var(--gap-min);
@@ -155,9 +166,51 @@
     }
 
     &__arrow-down {
-        transform: rotate(180deg);
-        font-size: var(--font-size-medium);
-        letter-spacing: -3px;
-        margin-bottom: var(--gap-medium);
+        margin: var(--gap-big) 0;
+
+        &-img {
+            justify-content: center;
+            bottom: var(--gap-big);
+            position: absolute;
+            width: 65px;
+            animation: jump 0.8s ease 1.5s infinite alternate;
+            cursor: pointer;
+            padding: var(--gap-tiny);
+            opacity: 1;
+            transition: opacity 1.5s ease-in-out;
+
+            @media (width <= 1024px) {
+                width: 50px;
+                animation: jump-mobile 0.8s ease 1.5s infinite alternate;
+            }
+        }
+
+        .jump-wait-load {
+            animation: none;
+        }
+    }
+
+    &_opacity-wait-load {
+        opacity: 0;
+    }
+
+    @keyframes jump {
+        from {
+            bottom: var(--gap-big);
+        }
+
+        to {
+            bottom: var(--gap-huge);
+        }
+    }
+
+    @keyframes jump-mobile {
+        from {
+            bottom: var(--gap-medium);
+        }
+
+        to {
+            bottom: var(--gap-big);
+        }
     }
 }
