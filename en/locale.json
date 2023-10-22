@@ -1,7 +1,24 @@
 {
+    "workAliceSerial": "Where is Alice?",
+    "workBabushSerial": "Бабушкины сказки",
+    "workVseBudetSerial": "Все будет хорошо!",
+
     "workMatreshka": "ЯМЫ МАТРЕШКА",
-    "workBirthday": "День рождения",
-    "workWontBeAdult": "Не хочу быть взрослым",
+    "workAlice": "Где Алиса?",
+    "workWontGusenica": "СИНЯЯ ГУСЕНИЦА",
+    "workWontNORA": "КРОЛИЧЬЯ НОРА",
+    "workWontshultayboltay": "ШАЛТАЙ БОЛТАЙ",
+    "workWonttruelala": "ТРУЛЯЛЯ И ТРАЛЯЛЯ",
+    "workWontNevlez": "НЕ ВЛЕЗАЙ, УБЪЕТ!",
+    "workWontKolob": "ПУБЕРТАТ",
+    "workWontHappy": "HAPPY END",
+    "workWontAddict": "АДДИКЦИЯ",
+    "workWontSuper": "SUPERMAN",
+    "workWontOhuzh": "ОХ УЖ ЭТИ СКАЗОЧКИ!",
+    "workWontKina": "КИНА НЕ БУДЕТ",
+    "workWontYami": "ЯМЫ МАТРЕШКИ",
+    "workWontNeval": "НЕВАЛЯШКИ НЕ СДАЮТСЯ",
+    "workWontNeStoit": "НЕ СТОИТ ЗЛИТЬ МАТРЕШЕК",
 
     "velvetBearRememberTitle": "МИШКА-ВОСПОМИНАНИЕ",
     "velvetBearRememberDescription": "Мишка-воспоминание “Сериал для брата”. Проект “Когда я был Бумером”.",
@@ -11,16 +28,21 @@
 
     "awardSomeName": "Международная выстка в г. Стамбул 'Поэзия лета'",
 
-    "specMaterialAkril": "акрил",
+    "specMaterialAkril": "Акрил",
+    "specMaterialArtefact": "артефакты",
     "specMaterialCanvas": "холст",
+    "specMaterialVish": "вышивка",
+    "specMaterialTkan": "ткань",
     "specMaterialBiser": "бисер",
+    "specMaterialPaper": "бумага",
     "specMaterials": "Материал",
     "specSize": "Размер",
     "specDate": "Выпуск",
-    "specPrice": "Цена",
+    "specPrice": "Стоимость",
+    "specSerial": "Серия",
 
     "greetingLogoAlt": "Логотип художника Оксаны Муратовой",
-    "greetingTitle": "ОКСАНА МУРАТОВА",
+    "greetingTitle": "OKSANA MURATOVA",
     "greetingMajorParagraph1": "Я, художник и неисправимый мистик, неустанно рассказываю странные истории в своих картинах.",
     "greetingMajorParagraph2": "Мрачные сказки, неожиданные выводы и тайные знаки... Если Вам близка мрачная эстетика и мистицизм, то Вы в правильном месте.",
     "greetingMajorParagraph3": "Добро пожаловать!",
@@ -68,5 +90,7 @@
     "galleryСloseIconAlt": "Закрыть галерею",
     "galleryStubText": "Вы досмотрели эту галерею до конца.<br><br><u>Закрыть</u>",
     "galleryButtonNextAlt": "Следующее изображение",
-    "galleryButtonPrevAlt": "Предыдущее изображение"
+    "galleryButtonPrevAlt": "Предыдущее изображение",
+
+    "sold":"Продано"
 }
