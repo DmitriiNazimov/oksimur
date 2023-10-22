@@ -10,6 +10,7 @@
         justify-content: flex-start;
         gap: 20px;
         padding-top: var(--gap-huge);
+        flex-wrap: wrap;
 
         @media (width <= 1024px) {
             flex-direction: column;
@@ -19,8 +20,7 @@
     }
 
     &__item {
-        margin: 0 10px;
-        max-width: 30.5%;
+        max-width: 33%;
 
         &:nth-child(n + 4) {
             margin-top: var(--gap-big);
@@ -40,6 +40,9 @@
             border: 1px solid var(--bright-text-color);
             max-height: 400px;
             cursor: pointer;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: top;
 
             @media (width <= 1024px) {
                 align-self: center;
