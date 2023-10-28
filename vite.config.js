@@ -2,6 +2,7 @@ import postcssMixins from 'postcss-mixins';
 import postcssNested from 'postcss-nested';
 import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
+import { ghPages } from 'vite-plugin-gh-pages';
 import injectHTML from 'vite-plugin-html-inject-localize';
 import viteImagemin from 'vite-plugin-imagemin';
 
@@ -24,5 +25,6 @@ export default defineConfig({
             plugins: [postcssMixins, postcssNested],
         },
     },
-    plugins: [eslint(), injectHTML(), viteImagemin(imgMinConfig)],
+    base: '/oksimur/',
+    plugins: [eslint(), injectHTML(), viteImagemin(imgMinConfig), ghPages()],
 });
