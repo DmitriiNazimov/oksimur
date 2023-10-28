@@ -1,6 +1,6 @@
 .awards__wrapper {
     background-color: var(--background-color-bright);
-    background-image: url(/public/bg/awards-background.jpg);
+    background-image: url(/bg/awards-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 

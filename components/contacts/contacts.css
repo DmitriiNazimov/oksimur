@@ -14,7 +14,7 @@
         background-position: center center;
 
         @media (width <= 1024px) {
-            background-image: url(/public/bg/contacts-background-mobile.jpg);
+            background-image: url(/bg/contacts-background-mobile.jpg);
 
             @media (height <= 660px) {
                 background-position: 100% 100%;
@@ -22,7 +22,7 @@
         }
 
         @media (width > 1024px) {
-            background-image: url(/public/bg/contacts-background.jpg);
+            background-image: url(/bg/contacts-background.jpg);
         }
     }
 }
