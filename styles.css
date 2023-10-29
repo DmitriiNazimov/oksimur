@@ -47,7 +47,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    @media (width <= 1024px) {
+    @media (max-width: 1024px) {
         font-size: var(--font-size-general-mobile);
         line-height: var(--gap-small);
     }
@@ -72,7 +72,7 @@ h2 {
     margin-top: var(--gap-medium);
     line-height: var(--font-size-header);
 
-    @media (width <= 1024px) {
+    @media (max-width: 1024px) {
         font-size: var(--font-size-medium);
         margin-bottom: var(--gap-medium);
         line-height: initial;
@@ -84,7 +84,7 @@ h3 {
     font-weight: 400;
     font-size: var(--font-size-medium);
 
-    @media (width <= 1024px) {
+    @media (max-width: 1024px) {
         font-size: var(--font-size-pre-medium);
     }
 }
@@ -101,7 +101,7 @@ a {
 p {
     margin: var(--gap-medium) 0;
 
-    @media (width <= 1024px) {
+    @media (max-width: 1024px) {
         margin: var(--gap-small) 0;
     }
 }
@@ -111,7 +111,7 @@ p {
     line-height: var(--gap-medium);
     text-align: left;
 
-    @media (width <= 1024px) {
+    @media (max-width: 1024px) {
         font-size: var(--font-size-general-mobile);
         line-height: var(--gap-small);
     }

@@ -13,7 +13,7 @@
         background-size: cover;
         background-position: center center;
 
-        @media (width <= 1024px) {
+        @media (max-width: 1024px) {
             background-image: url(/bg/contacts-background-mobile.jpg);
 
             @media (height <= 660px) {
@@ -41,7 +41,7 @@
                 font-weight: 700;
             }
 
-            @media (width <= 1024px) {
+            @media (max-width: 1024px) {
                 width: 100%;
                 margin-top: var(--gap-min);
                 text-align: center;
@@ -63,7 +63,7 @@
                 padding-left: var(--gap-big);
                 border-color: var(--bright-text-color);
 
-                @media (width <= 1024px) {
+                @media (max-width: 1024px) {
                     margin-bottom: 0;
                     padding-left: 0;
                 }
@@ -92,7 +92,7 @@
                 width: 100%;
             }
 
-            @media (width <= 1024px) {
+            @media (max-width: 1024px) {
                 display: none;
             }
         }
@@ -111,7 +111,7 @@
             width: 20px;
         }
 
-        @media (width <= 1024px) {
+        @media (max-width: 1024px) {
             margin: 0 auto;
             padding-bottom: var(--gap-small);
             border-bottom: 1px solid var(--bright-text-color);
@@ -137,7 +137,7 @@
             cursor: pointer;
             width: fit-content;
 
-            @media (width <= 1024px) {
+            @media (max-width: 1024px) {
                 font-size: var(--font-size-pre-medium);
                 font-weight: 500;
                 display: flex;
@@ -147,7 +147,7 @@
         }
     }
 
-    @media (width <= 1024px) {
+    @media (max-width: 1024px) {
         .social-icons {
             justify-content: center;
             margin-bottom: var(--gap-medium);
@@ -158,7 +158,7 @@
         margin-top: 8rem;
     }
 
-    @media (width <= 1024px) {
+    @media (max-width: 1024px) {
         .footer {
             display: none;
         }

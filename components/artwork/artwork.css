@@ -12,7 +12,7 @@
         padding-top: var(--gap-huge);
         flex-wrap: wrap;
 
-        @media (width <= 1024px) {
+        @media (max-width: 1024px) {
             flex-direction: column;
             padding-top: 0;
             flex-wrap: initial;
@@ -27,7 +27,7 @@
             display: none;
         }
 
-        @media (width <= 1024px) {
+        @media (max-width: 1024px) {
             max-width: 100%;
             margin-top: var(--gap-big);
             display: flex;
@@ -44,7 +44,7 @@
             object-fit: cover;
             object-position: top;
 
-            @media (width <= 1024px) {
+            @media (max-width: 1024px) {
                 align-self: center;
                 max-height: none;
                 max-width: none;
@@ -58,7 +58,7 @@
             line-height: var(--gap-medium);
             margin: var(--gap-medium) 0;
 
-            @media (width <= 1024px) {
+            @media (max-width: 1024px) {
                 font-size: var(--font-size-pre-medium);
             }
         }

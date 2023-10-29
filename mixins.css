@@ -17,7 +17,7 @@
     padding: var(--gap-big) var(--gap-min);
     box-sizing: border-box;
 
-    @media (width <= 1024px) {
+    @media (max-width: 1024px) {
         padding: var(--gap-min);
     }
 }
@@ -27,7 +27,7 @@
     padding-left: 40px;
     margin-bottom: var(--gap-medium);
 
-    @media (width <= 1024px) {
+    @media (max-width: 1024px) {
         border-left: none;
         padding-left: 0;
     }
