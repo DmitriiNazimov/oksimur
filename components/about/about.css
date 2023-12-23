@@ -15,7 +15,7 @@
         &-text {
             width: 52%;
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 width: 100%;
 
                 .major-paragraph {
@@ -30,7 +30,7 @@
                 margin-bottom: var(--gap-big);
                 border-color: var(--dark-text-color);
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1023px) {
                     margin-bottom: 0;
                 }
             }
@@ -64,7 +64,7 @@
                 display: none;
             }
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 display: none;
 
                 &_mobile {

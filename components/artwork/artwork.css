@@ -12,7 +12,7 @@
         padding-top: var(--gap-huge);
         flex-wrap: wrap;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             flex-direction: column;
             padding-top: 0;
             flex-wrap: initial;
@@ -20,14 +20,14 @@
     }
 
     &__item {
-        max-width: 33%;
+        max-width: 31.5%;
 
         &:nth-child(n + 4) {
             margin-top: var(--gap-big);
             display: none;
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             max-width: 100%;
             margin-top: var(--gap-big);
             display: flex;
@@ -44,7 +44,7 @@
             object-fit: cover;
             object-position: top;
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 align-self: center;
                 max-height: none;
                 max-width: none;
@@ -58,7 +58,7 @@
             line-height: var(--gap-medium);
             margin: var(--gap-medium) 0;
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 font-size: var(--font-size-pre-medium);
             }
         }

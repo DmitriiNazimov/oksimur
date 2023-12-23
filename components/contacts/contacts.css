@@ -13,7 +13,7 @@
         background-size: cover;
         background-position: center center;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             background-image: url(/bg/contacts-background-mobile.jpg);
 
             @media (height <= 660px) {
@@ -21,7 +21,7 @@
             }
         }
 
-        @media (width > 1024px) {
+        @media (width > 1023px) {
             background-image: url(/bg/contacts-background.jpg);
         }
     }
@@ -41,7 +41,7 @@
                 font-weight: 700;
             }
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 width: 100%;
                 margin-top: var(--gap-min);
                 text-align: center;
@@ -64,7 +64,7 @@
                 border-color: var(--bright-text-color);
                 padding-bottom: var(--gap-medium);
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1023px) {
                     margin-bottom: 0;
                     padding-left: 0;
                 }
@@ -93,7 +93,7 @@
                 width: 100%;
             }
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 display: none;
             }
         }
@@ -120,7 +120,7 @@
             font-size: var(--font-size-pre-medium);
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             margin: 0 auto;
             padding-bottom: var(--gap-small);
             border-bottom: 1px solid var(--bright-text-color);
@@ -146,7 +146,7 @@
             cursor: pointer;
             width: fit-content;
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 font-size: var(--font-size-pre-medium);
                 font-weight: 500;
                 display: flex;
@@ -156,7 +156,7 @@
         }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
         .social-icons {
             justify-content: center;
             margin-bottom: var(--gap-medium);

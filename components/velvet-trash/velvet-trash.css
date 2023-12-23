@@ -15,7 +15,7 @@
             display: none;
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             flex-direction: column;
             border-bottom: none;
             margin-bottom: 0;
@@ -33,7 +33,7 @@
         & > :first-child {
             margin-right: var(--gap-medium);
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 margin: 0 auto;
             }
         }
@@ -41,7 +41,7 @@
         &-collage {
             display: flex;
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 flex-direction: column;
                 margin: 0 auto;
                 width: 100%;
@@ -52,7 +52,7 @@
                 max-width: 300px;
                 cursor: pointer;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1023px) {
                     margin-right: 0;
                     width: 100%;
                     max-width: 100%;
@@ -64,7 +64,7 @@
                 justify-content: space-between;
                 flex-direction: column;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1023px) {
                     flex-direction: row;
                     margin-top: 10px;
                 }
@@ -75,7 +75,7 @@
                 width: 145px;
                 cursor: pointer;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1023px) {
                     width: calc(50% - 5px);
                     height: auto;
                 }
@@ -87,7 +87,7 @@
                 margin-bottom: var(--gap-medium);
                 margin-top: 0;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1023px) {
                     margin-bottom: 0;
                     margin-top: var(--gap-medium);
                 }
@@ -97,7 +97,7 @@
         &-specification {
             @mixin specification-table;
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 border-top: 1px solid var(--background-color-bright);
                 padding-top: var(--gap-min);
             }
@@ -107,14 +107,14 @@
     &__item:nth-child(even) {
         flex-direction: row-reverse;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             flex-direction: column;
         }
 
         & > :last-child {
             margin-right: var(--gap-medium);
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 margin-right: 0 auto;
             }
         }

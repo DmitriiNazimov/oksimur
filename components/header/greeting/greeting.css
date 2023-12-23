@@ -25,7 +25,7 @@
         transform: scale(1);
         transition: transform 2s;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             background-image: url(/bg/greeting-background-mobile.jpg);
             font-weight: var(--mobile-resolution);
 
@@ -56,7 +56,7 @@
         margin-bottom: 10rem;
         text-transform: uppercase;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             margin-bottom: 6.5rem;
         }
     }
@@ -68,7 +68,7 @@
         display: flex;
         align-items: center;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             img {
                 width: var(--gap-medium);
                 height: var(--gap-medium);
@@ -83,7 +83,7 @@
         justify-content: space-around;
         line-height: 40px;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             display: none;
         }
 
@@ -102,7 +102,7 @@
         display: flex;
         align-items: center;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             margin-right: 50px;
         }
     }
@@ -122,7 +122,7 @@
         opacity: 1;
         transition: opacity 1.5s ease-in-out;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             width: 80%;
         }
 
@@ -136,7 +136,7 @@
 
                 margin-bottom: 5rem;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1023px) {
                     margin-bottom: 3.5rem;
                 }
 
@@ -154,13 +154,13 @@
         .gallery-link {
             margin-right: var(--gap-min);
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 width: 161px;
                 margin-top: var(--gap-medium);
             }
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             flex-direction: column-reverse;
         }
     }
@@ -179,7 +179,7 @@
             opacity: 1;
             transition: opacity 1.5s ease-in-out;
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 width: 50px;
                 animation: jump-mobile 0.8s ease 1.5s infinite alternate;
             }
